@@ -1,0 +1,13 @@
+{
+  "DB_HOST": "",
+  "DB_USERNAME": "",
+  "DB_PASSWORD": "",
+  "DB_PORT": "3306",
+  "DB_NAME": "",
+  "PORT": "9096",
+  "DEBUG": true,
+  "JWT_SECRET": "YOUR_JWT_SECRET",
+  "MAILGUN_API": "MAILGUN_PRIVATE_API_KEY",
+  "MAIL_DOMAIN": "YOUR_DOMAIN",
+  "BASE_URL": "http://localhost:9096"
+}

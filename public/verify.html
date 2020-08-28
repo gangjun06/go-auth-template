@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundRequest - Verify Email</title>
+    <style>
+      @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+      html {
+        font-family: 'Noto Sans KR', sans-serif !important;
+        background-image: url(https://cdn.discordapp.com/attachments/727861708974063666/727861728146227200/adrian-korte-5gn2soeAc40-unsplash_1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100%;
+      }
+      .centerAll {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .text {
+        font-size: 30px;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 8px;
+        position: relative;
+      }
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+      .cardTitle {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #565656;
+      }
+      .cardText {
+        white-space: pre-wrap;
+        margin-bottom: 12px;
+      }
+      .cardBottom {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+      .container {
+        padding: 16px 20px;
+      }
+      .bg-success {
+        background-color: #9176ff;
+      }
+      .bg-faild {
+        background-color: #fb6d9f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centerAll">
+      <div class="card container">
+        <div class="cardTitle">SoundRequest</div>
+        <div class="cardText">{{.text}}</div>
+        {{if .success}}
+        <div class="cardBottom bg-success"></div>
+        {{else}}
+        <div class="cardBottom bg-faild"></div>
+        {{end}}
+      </div>
+    </div>
+  </body>
+</html>
